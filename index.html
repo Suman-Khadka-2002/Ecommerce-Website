@@ -21,7 +21,7 @@
                 </div>
 
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Products</a></li>
                         <li><a href="#">About</a></li>
@@ -30,10 +30,12 @@
                     </ul>
                 </nav>
                 <img src="images/cart.png" alt="cart" width="25px" height="25px">
+                <img src="images/menu.png" alt="menu" class="menu-icon" 
+                onclick="menutoggle()">
             </div>
 
             <div class="row">
-                <img src="images/outdoor-camping.jpg" alt="bg img" width="100%">
+                <img src="images/background.jpg" alt="bg img" class="backimg" width="100%" class="back-img">
                     <div class="top-left">
                         <h1> Become <br> One With <br> Nature </h1>
                         <p>Everything You Need For the Perfect <br> Travel Experience</p>
@@ -48,48 +50,106 @@
     <div class="categories">
         <div class="small-container">
             <div class="row">
-                <div class="col-3">
-                    <img src="images/category-1.jpg" alt="">
+                <div class="col-2">
+                    <img src="images/front1.jpg" id="img1" alt="">
+                    <div class="center">
+                        <h1>GET READY FOR <br> THE BIG CHILL</h1>
+                        <p>Our New Jackets and Vests collection</p>
+
+                        <a href="" class="btn">Shop New Arrivals &#8594</a>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <img src="images/category-2.jpg" alt="">
+                <div class="col-2" >
+                    <img src="images/front2.jpg" alt="">
+                    <div class="right">
+                        <h1>SLEEP UNDER <br> THE STARS</h1>
+                        <p>Special Tent Sale - 15% OFF All Tents</p>
+
+                        <a href="" class="btn">Shop Now &#8594</a>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <img src="images/category-3.jpg" alt="">
-                </div>
+
             </div>
         </div>
     </div>
 
     <!-- featured products -->
 
-    <div class="small-container">
-        <h2>Featured Products</h2>
+    <div class="small-container2">
+        <h2 class="title">OUR BEST-SELLING EQUIPMENT</h2>
         <div class="row">
             <div class="col-4">
-                <img src="images/product-1.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-sharp fa-solid fa-star"></i>                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <!-- <i class="fa-regular fa-star"></i> -->
-                </div>
+                <img src="images/item1.jpg" alt="">
+                <h4>Blue Jacket</h4><hr>
                 <p>Rs. 500.00</p>
             </div>
-            <!-- <div class="col-4">
-                <img src="images/product-2.jpg" alt="">
+            <div class="col-4">
+                <img src="images/item2.jpg" alt="">
+                <h4>Sleeping Pad</h4><hr>
+                <p>Rs. 600</p>
             </div>
             <div class="col-4">
-                <img src="images/product-3.jpg" alt="">
+                <img src="images/item3.jpg" alt="">
+                <h4>Green Tent</h4><hr>
+                <p>Rs. 1000</p>
             </div>
             <div class="col-4">
-                <img src="images/product-4.jpg" alt="">
-            </div> -->
+                <img src="images/item4.jpg" alt="">
+                <h4>Sleeping Bag</h4><hr>
+                <p>Rs. 800</p>
+            </div>
         </div>
     </div>
 
 
+    <!-- ---footer--- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/logo.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure 
+                        and Benefits of Camping Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>FAQs</li>
+                        <li>Shipping & Returns</li>
+                        <li>Store Policy</li>
+                        <li>Payment Methods</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright&copy; 2023 - Suman Khadka</p>
+        </div>
+    </div>
+
+    <!-- ----js for toggle menu-- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 
 </body>
 </html>
